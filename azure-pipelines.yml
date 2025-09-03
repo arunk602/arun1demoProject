@@ -32,7 +32,7 @@ stages:
     - task: AzureCLI@2
       displayName: "Deploy ARM template to Test ADF"
       inputs:
-        azureSubscription: 'MyServiceConnection'   # Service connection in DevOps
+        azureSubscription: 'arun1devopsSrvConn'   # Service connection in DevOps
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
