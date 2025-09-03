@@ -36,7 +36,7 @@
 					{
 						"activity": "Lookup_excelfile",
 						"dependencyConditions": [
-							"Completed"
+							"Succeeded"
 						]
 					}
 				],
@@ -92,6 +92,8 @@
 				]
 			}
 		],
-		"annotations": []
-	}
+		"annotations": [],
+		"lastPublishTime": "2025-09-03T05:42:03Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }
