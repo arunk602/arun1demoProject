@@ -24,10 +24,8 @@ stages:
       persistCredentials: true
       clean: true
 
-    - script: |
-        echo "Listing repo files..."
-        ls -R
-      displayName: "List repo files"
+    - script: dir
+      displayName: 'List files (cmd.exe)'
 
     - task: AzureCLI@2
       displayName: "Deploy ARM template to Test ADF"
