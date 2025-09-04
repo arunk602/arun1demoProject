@@ -1,5 +1,5 @@
 pool:
-  name: 'MySelfHostedPool'
+  name: 'arun1projectDemo'
 
 steps:
 - script: echo "Hello from self-hosted agent"
