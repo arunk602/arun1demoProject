@@ -4,7 +4,6 @@ trigger:
       - main   # Runs on commits to main branch
 
 pool:
-  name: arun1demoPool  # or your self-hosted pool name
   vmImage: 'ubuntu-latest'
 
 variables:
@@ -43,8 +42,4 @@ stages:
             --parameters @$(parametersPath) \
             --parameters factoryName=$(factoryName) \
             --name adf_test_deployment_$(Build.BuildId)
-steps:
-- script: |
-    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-    az --version
-    displayName: 'Install Azure CLI on Linux'
+
