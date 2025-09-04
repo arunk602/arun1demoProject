@@ -31,7 +31,7 @@ stages:
       displayName: "Deploy ARM template to Test ADF"
       inputs:
         azureSubscription: 'arun1devopsSrvConn'   # Service connection in DevOps
-        scriptType: 'pscore'
+        scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
           az group show --name $(resourceGroupName)
