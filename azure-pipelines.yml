@@ -13,8 +13,6 @@ trigger:
 pool:
   name: 'arun1projectDemo'
 
-azureSubscription: 'arun1adfSrvConn'
-
 variables:
   resourceGroupName: 'arun1testing-RG'
   subscriptionId: 'fa236b7f-954f-4834-8294-f0a2b5cea417'
