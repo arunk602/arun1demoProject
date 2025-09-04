@@ -7,6 +7,12 @@ pool:
   name: arun1demoPool  # or your self-hosted pool name
   vmImage: 'ubuntu-latest'
 
+steps:
+- script: |
+    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+    az --version
+    displayName: 'Install Azure CLI on Linux'
+
 variables:
   resourceGroupName: 'arun1testing-RG'
   subscriptionId: 'fa236b7f-954f-4834-8294-f0a2b5cea417'
