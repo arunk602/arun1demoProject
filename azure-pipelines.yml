@@ -5,6 +5,7 @@ trigger:
 
 pool:
   name: arun1demoPool  # or your self-hosted pool name
+  vmImage: 'ubuntu-latest'
 
 variables:
   resourceGroupName: 'arun1testing-RG'
